@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-container{
+    font-size: larger;
+}
+
+.login-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 40px 35px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.login-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e88e5;
+    font-size: 26px;
+}
+
+.login-wrapper label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px;
+    color: #444;
+}
+
+.login-wrapper input[type="text"],
+.login-wrapper input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.login-wrapper input[type="text"]:focus,
+.login-wrapper input[type="password"]:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.4);
+}
+
+.login-wrapper button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e88e5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-wrapper button:hover {
+    background-color: #1565c0;
+}
+
+.login-wrapper p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
